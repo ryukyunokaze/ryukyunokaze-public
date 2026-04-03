@@ -126,29 +126,63 @@
   <div class="online-form-container">
 
     <div id="step1">
-      <h1 class="step-title">🎟 チケット枚数選択</h1>
-      
-      <div class="ticket-card">
-        <div class="ticket-image-large"><img src="https://placehold.jp/24/1e3a8a/ffffff/400x160.png?text=S-AREA"></div>
-        <div class="ticket-info">
-          <div class="ticket-header"><span class="area-name">Sエリア</span><span class="price" id="price-sa-display">----円</span></div>
-          <div class="input-row-narrow"><label>大人</label><div class="input-unit-wrap"><input type="number" id="s_a" value="0" min="0" oninput="calc()">枚</div></div>
-          <div class="input-row-narrow"><label>子供</label><div class="input-unit-wrap"><input type="number" id="s_c" value="0" min="0" oninput="calc()">名</div></div>
-        </div>
-      </div>
-
-      <div class="ticket-card">
-        <div class="ticket-image-large"><img src="https://placehold.jp/24/64748b/ffffff/400x160.png?text=GENERAL-AREA"></div>
-        <div class="ticket-info">
-          <div class="ticket-header"><span class="area-name">一般エリア</span><span class="price" id="price-ga-display">----円</span></div>
-          <div class="input-row-narrow"><label>大人</label><div class="input-unit-wrap"><input type="number" id="g_a" value="0" min="0" oninput="calc()">枚</div></div>
-          <div class="input-row-narrow"><label>子供</label><div class="input-unit-wrap"><input type="number" id="g_c" value="0" min="0" oninput="calc()">名</div></div>
-        </div>
-      </div>
-
-      <div class="total-box-highlight">合計金額：<span id="totalDisplay">0</span>円</div>
-      <button class="submit-btn-main" onclick="goToStep2()">購入者情報の入力へ進む</button>
+  <h1 class="step-title">🎟 チケット枚数選択</h1>
+  
+  <div class="ticket-card">
+    <div class="ticket-image-large">
+      <img src="https://ryukyunokaze-public.vercel.app/AREA.jpg">
     </div>
+    <div class="ticket-info">
+
+      <!-- Sエリア -->
+      <div class="ticket-header">
+        <span class="area-name">Sエリア</span>
+        <span class="price" id="price-sa-display">----円</span>
+      </div>
+      <div class="input-row-narrow">
+        <label>大人</label>
+        <div class="input-unit-wrap">
+          <input type="number" id="s_a" value="0" min="0" oninput="calc()">枚
+        </div>
+      </div>
+      <div class="input-row-narrow">
+        <label>子供</label>
+        <div class="input-unit-wrap">
+          <input type="number" id="s_c" value="0" min="0" oninput="calc()">名
+        </div>
+      </div>
+
+      <!-- 区切り線 -->
+      <hr style="border:none; border-top:1px dashed #e2e8f0; margin:15px 0;">
+
+      <!-- 一般エリア -->
+      <div class="ticket-header">
+        <span class="area-name">一般エリア</span>
+        <span class="price" id="price-ga-display">----円</span>
+      </div>
+      <div class="input-row-narrow">
+        <label>大人</label>
+        <div class="input-unit-wrap">
+          <input type="number" id="g_a" value="0" min="0" oninput="calc()">枚
+        </div>
+      </div>
+      <div class="input-row-narrow">
+        <label>子供</label>
+        <div class="input-unit-wrap">
+          <input type="number" id="g_c" value="0" min="0" oninput="calc()">名
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="total-box-highlight">
+    合計金額：<span id="totalDisplay">0</span>円
+  </div>
+  <button class="submit-btn-main" onclick="goToStep2()">
+    購入者情報の入力へ進む
+  </button>
+</div>
 
     <div id="step2" style="display: none;">
   <div class="info-card">
