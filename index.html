@@ -136,20 +136,21 @@
     <div class="ticket-info">
 
       <!-- Sエリア -->
-      <div class="ticket-header">
-        <span class="area-name">Sエリア</span>
-        <span class="price" id="price-sa-display">----円</span>
+      <div style="background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%); color: white; padding: 20px; border-radius: 12px; text-align: center; margin-bottom: 15px; border: 3px solid #fca5a5;">
+        <div style="font-size: 1.4rem; font-weight: bold; margin-bottom: 8px; opacity: 0.95;">Sエリア</div>
+        <div style="font-size: 2.2rem; font-weight: 900; letter-spacing: 0.15em;">🚫 SOLD OUT</div>
+        <span class="price" id="price-sa-display" style="display:none;">SOLD OUT</span>
       </div>
       <div class="input-row-narrow">
         <label>大人</label>
         <div class="input-unit-wrap">
-          <input type="number" id="s_a" value="0" min="0" oninput="calc()">枚
+          <input type="number" id="s_a" value="0" min="0" max="0" oninput="calc()" disabled style="background-color: #e2e8f0; cursor: not-allowed;">枚
         </div>
       </div>
       <div class="input-row-narrow">
         <label>子供</label>
         <div class="input-unit-wrap">
-          <input type="number" id="s_c" value="0" min="0" oninput="calc()">名
+          <input type="number" id="s_c" value="0" min="0" max="0" oninput="calc()" disabled style="background-color: #e2e8f0; cursor: not-allowed;">名
         </div>
       </div>
 
